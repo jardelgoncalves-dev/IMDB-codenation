@@ -21,7 +21,9 @@ body {
 	background-image: url(../img/capa-madmax2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
+
 
 .hero::after {
 	content: "";
@@ -79,6 +81,7 @@ body {
 	margin: 0 25px;
 }
 
+.catalog-menu .menu .list-menu li a,
 .navbar .menu .item a {
 	color: #fff;
 	font-size: 1.3em;
@@ -158,4 +161,205 @@ body {
 	position: absolute;
 	right: 15px;
 	top: 12px;
+}
+
+
+.main {
+	background-color: #f2f2f2;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.catalog-menu {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.catalog-menu .menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.catalog-menu .menu .list-menu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	width: 960px;
+
+}
+
+.catalog-menu .menu .list-menu li {
+	margin: 0 20px;
+}
+.catalog-menu .menu .list-menu li a {
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.catalog-menu .menu .list-menu li a:hover {
+	border-bottom: 1px solid #e4bb23;
+}
+
+.catalog {
+	width: 960px;
+	display: flex;
+	justify-content: center;
+}
+
+.catalog .list-items {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.catalog .list-items .item {
+	width: 24%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 25px;
+	border-radius: 8px;
+}
+
+.catalog .list-items .item .post {
+	height: auto;
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+
+.catalog .list-items .item .post .details {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1;
+	padding: 80px 20px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+}
+
+.catalog .list-items .item:hover .details {
+	visibility: visible;
+}
+
+.catalog .list-items .item .post .details h3 {
+	color: #e4bb23;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.catalog .list-items .item .post .details a {
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+.catalog .list-items .item .post .details a:hover {
+	color: #e4bb23;
+	transition: all 0.2s ease-in-out;
+}
+
+.catalog .list-items .item .sinopse {
+	padding: 10px;
+}
+
+.catalog .list-items .item .sinopse h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.catalog .list-items .item .sinopse .category a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #e4bb23;
+}
+
+.catalog .list-items .item .sinopse .note {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.catalog .list-items .item .sinopse .note .fa {
+	color: #ccc;
+	cursor: pointer;
+}
+.catalog .list-items .item .sinopse .note .fa:hover {
+	color: #eb4242;
+}
+
+footer {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+footer .footer {
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .social {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.footer .social li {
+	margin: 0 20px;
+	font-size: 2.5em;
+}
+
+.footer .social li:last-child {
+	margin: 0 0;
+	margin-left: 20px;
+}
+
+.footer .fa {
+	color: #bbb;
+}
+
+.footer .social-facebook .fa:hover {
+	color: #0E8EF1
+}
+
+.footer .social-twitter .fa:hover {
+	color: #55ACEE
+}
+
+.footer .social-instagram .fa:hover {
+	color: #EA483B
+}
+
+.footer .fa:hover {
+	transition: all 0.1s ease-in-out;
 }
